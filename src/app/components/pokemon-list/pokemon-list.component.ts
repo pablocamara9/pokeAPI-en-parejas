@@ -20,6 +20,7 @@ ngOnInit(): void {
   });
 }
 getPokemonName(name: string): Pokemon {
+  //sacvar el pokemon por el name
   
   return Pokemon;
 }
