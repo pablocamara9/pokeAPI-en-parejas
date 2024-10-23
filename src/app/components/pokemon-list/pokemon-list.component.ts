@@ -10,7 +10,6 @@ import { PokemonServicesService } from '../../services/pokemon-services.service'
 export class PokemonListComponent implements OnInit {
 
   listOfPokemon: Pokemon[] = [];
-  listOfSprites: string[] = []; 
 
   constructor(private pokenmonSvc: PokemonServicesService) { }
 
@@ -19,20 +18,9 @@ ngOnInit(): void {
     this.listOfPokemon = respuesta.results;
   });
 }
-getPokemonName(name: string): Pokemon {
-  //sacvar el pokemon por el name
-  
-  return Pokemon;
-}
-getIdPokemon(pokemon: Pokemon): number {
-    const urlParts = pokemon.url.split('/');
-    return parseInt(urlParts[urlParts.length - 2]);
 
-}
-getUrlImage(pokeId: number) {
-  return `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${this.getIdPokemon}.png`;
-  }
-  
+
+
 
 }
 
