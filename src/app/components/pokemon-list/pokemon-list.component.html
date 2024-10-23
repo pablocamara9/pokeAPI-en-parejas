@@ -1,0 +1,21 @@
+<div class="container-fluid">
+    <div class="row">
+      @for(poke of listOfPokemon; track poke.name) {
+     
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card">
+            <img [src]="getUrlImage(getIdPokemon(poke))" class="card-img-top ">
+            <div class="card-body">
+            <h5 class="card-title">{{ poke.name }}</h5>
+           
+          </div>
+        </div>
+      </div>}
+      
+      @empty {
+      <div class="col-12">
+        <p>No se encontraron Pokémon en la lista</p>
+      </div>
+      }
+    </div>
+  </div>
