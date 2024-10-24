@@ -1,0 +1,14 @@
+
+<div class="card" style="width: 13rem">
+  
+    <div class="card-body">
+        <h5 class="card-title" >{{ move!.name }}</h5>
+        <p class="card-text" >{{ move!.type }}</p>
+        <p class="card-text" >{{ move!.power }}</p>        
+      <a 
+        [routerLink]="['/move-detail/',getMoveId(move!.url)]"
+        class="btn btn-primary"
+        >Detalles</a
+      >
+    </div>
+  </div>

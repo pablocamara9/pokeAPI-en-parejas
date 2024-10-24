@@ -10,6 +10,7 @@ import { Move } from '../../interfaces/move.interface';
 export class MoveListComponent implements OnInit {
 
   listOfMoves: Move[] = [];
+  
 
   constructor(private movesSvc: MoveServicesService) { }
 
@@ -18,6 +19,10 @@ export class MoveListComponent implements OnInit {
       this.listOfMoves = respuesta.results;
     });
   }
+  getMoveId(url: string): number  {
+    return parseInt(url.split('/')[6]);
+  }
+ 
 }
 
 

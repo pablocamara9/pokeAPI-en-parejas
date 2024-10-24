@@ -10,6 +10,8 @@ import { HeaderComponentComponent } from './shared/header-component/header-compo
 import { provideHttpClient } from '@angular/common/http';
 import { MoveListComponent } from './components/move-list/move-list.component';
 import { PageNotFoundComponent } from './shared/page-not-found/page-not-found.component';
+import { MoveDetailComponent } from './components/move-detail/move-detail.component';
+import { MoveItemComponent } from './components/move-item/move-item.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { PageNotFoundComponent } from './shared/page-not-found/page-not-found.co
     PokemonListComponent,
     HeaderComponentComponent,
     MoveListComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    MoveDetailComponent,
+    MoveItemComponent
   ],
   imports: [
     BrowserModule,

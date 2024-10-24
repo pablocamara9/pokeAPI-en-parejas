@@ -1,5 +1,7 @@
-export interface Move {
+export interface MoveDetailResponse {
     url: string
+
+
     name: string
     accuracy: number
     effect_chance: any
@@ -23,14 +25,7 @@ export interface Move {
     learned_by_pokemon: LearnedByPokemon[]
     flavor_text_entries: FlavorTextEntry[]
   }
-  export interface MoveResponse {
-    count: number;
-    results: Move[];
-  }
-
-
   
-
 export interface ContestCombos {
     normal: Normal
     super: Super
