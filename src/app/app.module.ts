@@ -8,12 +8,14 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { PokemonListComponent } from './components/pokemon-list/pokemon-list.component';
 import { HeaderComponentComponent } from './shared/header-component/header-component.component';
 import { provideHttpClient } from '@angular/common/http';
+import { PokeballListComponent } from './components/pokeball-list/pokeball-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PokemonListComponent,
-    HeaderComponentComponent
+    HeaderComponentComponent,
+    PokeballListComponent
   ],
   imports: [
     BrowserModule,
