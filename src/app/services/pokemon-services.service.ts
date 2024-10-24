@@ -13,7 +13,4 @@ export class PokemonServicesService {
   getPokemon(): Observable<PokemonResponse>{
     return this.http.get<PokemonResponse>("https://pokeapi.co/api/v2/pokemon/");
   }
-  getSprite(): Observable<PokemonResponse>{
-    return this.http.get<PokemonResponse>("https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/");
-  }
 }
