@@ -8,12 +8,16 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { PokemonListComponent } from './components/pokemon-list/pokemon-list.component';
 import { HeaderComponentComponent } from './shared/header-component/header-component.component';
 import { provideHttpClient } from '@angular/common/http';
+import { MoveListComponent } from './components/move-list/move-list.component';
+import { PageNotFoundComponent } from './shared/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PokemonListComponent,
-    HeaderComponentComponent
+    HeaderComponentComponent,
+    MoveListComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,

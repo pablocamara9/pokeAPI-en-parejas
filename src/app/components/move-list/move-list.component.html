@@ -1,0 +1,22 @@
+<body>
+    <section>
+        <div class="container-fluid">
+            <div class="row mt-2 mb-2">
+              @for(item of listOfMoves; track item.id) {
+              <div class="col-md-3 col-12 mb-4"> <!-- Agrega mb-4 aquí para aumentar el margen inferior -->
+                <div class="card" style="width: 18rem">
+                  <div class="card-body">
+        
+                  
+                  <h3 class="card-title text-center">{{ item.name }}</h3> <!-- Reemplace el estilo inline con clase text-center -->
+                  <h4 class="card-body text-center">{{ item.id}}</h4>
+                                      
+                </div>
+                </div>
+              </div>
+              }
+            </div>
+        </div>
+    </section>
+  </body>
+  
