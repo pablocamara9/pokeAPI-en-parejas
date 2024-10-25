@@ -9,13 +9,21 @@ import { PokemonListComponent } from './components/pokemon-list/pokemon-list.com
 import { HeaderComponentComponent } from './shared/header-component/header-component.component';
 import { provideHttpClient } from '@angular/common/http';
 import { PokeballListComponent } from './components/pokeball-list/pokeball-list.component';
+import { MoveListComponent } from './components/move-list/move-list.component';
+import { PageNotFoundComponent } from './shared/page-not-found/page-not-found.component';
+import { MoveDetailComponent } from './components/move-detail/move-detail.component';
+import { MoveItemComponent } from './components/move-item/move-item.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PokemonListComponent,
     HeaderComponentComponent,
-    PokeballListComponent
+    PokeballListComponent,
+    MoveListComponent,
+    PageNotFoundComponent,
+    MoveDetailComponent,
+    MoveItemComponent
   ],
   imports: [
     BrowserModule,
