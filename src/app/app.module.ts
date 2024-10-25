@@ -31,7 +31,7 @@ import { PokeballItemComponent } from './components/pokeball-item/pokeball-item.
     PageNotFoundComponent,
     MoveDetailComponent,
     MoveItemComponent,
-    PokemonItemComponent
+    PokemonItemComponent,
     PokeballDetailComponent,
     PokeballItemComponent
   ],

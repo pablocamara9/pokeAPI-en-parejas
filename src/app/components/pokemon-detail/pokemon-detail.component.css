@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.card{
+    box-shadow: 0 7px 14px rgb(0, 0, 0, 0.712);
+}
+.card:hover {
+    transform: scale(1.05);
+    
+  }
+  
+.card-body {
+    text-align: center;
+    font-family: 'Press Start 2P', cursive; /* Fuente que imita el estilo Pokémon */
+
+}
+.card h4{
+    font-family: 'Press Start 2P', cursive; /* Fuente que imita el estilo Pokémon */
+    font-weight: bold; 
+    font-size: 1.2rem; 
+    text-align: center;
+    color: rgb(0, 0, 0); 
+
+}
