@@ -4,7 +4,7 @@
     border-radius: 15px;
     overflow: hidden;
     transition: transform 0.3s ease;
-    background-color: rgb(220, 232, 230);
+    background-color: rgb(244, 244, 47);
     box-shadow: 0 7px 14px rgba(0, 0, 0, 0.712); 
 }
 
@@ -13,7 +13,8 @@
   
   .card:hover {
     transform: scale(1.05);
-    background-color:  rgba(204, 204, 208, 0.395);
+    /*background-color:  rgba(204, 204, 208, 0.395);*/
+    background-color:  rgb(255, 255, 0);
     
   }
   
@@ -29,5 +30,13 @@
     color: rgb(0, 0, 0); 
 
   }
+
+.btn {
+    margin: 0 auto;
+    width: 180px;
+    margin-bottom: 10px;
+    background-color: rgba(255, 123, 0, 0.548);
+    border-color: rgba(255, 123, 0, 0.548);;
+}
   
   
