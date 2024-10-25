@@ -3,7 +3,7 @@
         <div class="container-fluid">
             <div class="row mt-2 mb-2">
               @for(item of listOfPokeball; track item.name) {
-              <div class="col-md-3 col-12 mb-4"> <!-- Agrega mb-4 aquí para aumentar el margen inferior -->
+              <div class="col-md-3 col-12 mb-4">
                 <div class="card" style="width: 18rem">
                   <div class="card-body">   
                     <!--<img [src]="'https://raw.githubusercontent.com/PokeAPI/sprites/refs/heads/master/sprites/items/poke-ball.png'">-->
@@ -12,7 +12,7 @@
                     + item.name.split('/').pop() + '.png'" class="card-img-top mb-2 rounded">
 
                   </div>
-                  <h5 class="card-title text-center">{{ item.name }}</h5> <!-- Reemplace el estilo inline con clase text-center -->
+                  <h5 class="card-title text-center">{{ item.name }}</h5>
                 </div>
               </div>
               }
