@@ -2,7 +2,7 @@
     <section>
         <div class="container-fluid">
             <div class="row mt-2 mb-2">
-              @for(item of listOfPokeball; track item.name) {
+              @for(item of listOfPokeball; track item.id) {
               <div class="col-md-3 col-12 mb-4">
                 <div class="card" style="width: 18rem">
                   <div class="card-body">   
@@ -13,6 +13,11 @@
 
                   </div>
                   <h5 class="card-title text-center">{{ item.name }}</h5>
+
+                  <a
+                  [routerLink]="['/pokeballs-detail/'+getPokeballId(item.url)]"
+                  class="btn btn-primary">Detalles</a>
+                  
                 </div>
               </div>
               }

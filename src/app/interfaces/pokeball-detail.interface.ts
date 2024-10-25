@@ -1,24 +1,20 @@
-export interface PokeballResponse {
-    results: Pokeball[];
-}
+export interface PokeballDetailResponse {
+    url: string
 
-export interface Pokeball {
-  url: string;
-
-  id: number
-  name: string
-  cost: number
-  fling_power: number
-  fling_effect: FlingEffect
-  attributes: Attribute[]
-  category: Category
-  effect_entries: EffectEntry[]
-  flavor_text_entries: FlavorTextEntry[]
-  game_indices: Index[]
-  names: Name[]
-  sprites: Sprites
-  held_by_pokemon: HeldByPokemon[]
-  baby_trigger_for: BabyTriggerFor
+    id: number
+    name: string
+    cost: number
+    fling_power: number
+    fling_effect: FlingEffect
+    attributes: Attribute[]
+    category: Category
+    effect_entries: EffectEntry[]
+    flavor_text_entries: FlavorTextEntry[]
+    game_indices: Index[]
+    names: Name[]
+    sprites: Sprites
+    held_by_pokemon: HeldByPokemon[]
+    baby_trigger_for: BabyTriggerFor
 }
 
 export interface FlingEffect {

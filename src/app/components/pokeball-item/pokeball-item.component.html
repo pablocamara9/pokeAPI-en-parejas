@@ -1,0 +1,14 @@
+
+<div class="card" style="width: 13rem">
+  
+    <div class="card-body">
+        <h5 class="card-title" >{{ pokeball!.name }}</h5>
+        <p class="card-text" >{{ pokeball!.cost }}</p>
+        <p class="card-text" >{{ pokeball!.category.name }}</p>        
+      <a 
+        [routerLink]="['/pokeball-detail/', pokeball?.id]"
+        class="btn btn-primary"
+        >Detalles</a
+      >
+    </div>
+  </div>

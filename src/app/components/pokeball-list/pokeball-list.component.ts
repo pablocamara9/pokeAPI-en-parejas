@@ -19,4 +19,8 @@ export class PokeballListComponent implements OnInit {
     })
   }
 
+  getPokeballId(url: string) {
+    return parseInt(url.split('/')[6]);
+  }
+
 }

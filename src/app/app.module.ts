@@ -13,6 +13,8 @@ import { MoveListComponent } from './components/move-list/move-list.component';
 import { PageNotFoundComponent } from './shared/page-not-found/page-not-found.component';
 import { MoveDetailComponent } from './components/move-detail/move-detail.component';
 import { MoveItemComponent } from './components/move-item/move-item.component';
+import { PokeballDetailComponent } from './components/pokeball-detail/pokeball-detail.component';
+import { PokeballItemComponent } from './components/pokeball-item/pokeball-item.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { MoveItemComponent } from './components/move-item/move-item.component';
     MoveListComponent,
     PageNotFoundComponent,
     MoveDetailComponent,
-    MoveItemComponent
+    MoveItemComponent,
+    PokeballDetailComponent,
+    PokeballItemComponent
   ],
   imports: [
     BrowserModule,
