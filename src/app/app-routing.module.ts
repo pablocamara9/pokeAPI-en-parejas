@@ -5,6 +5,8 @@ import { MoveListComponent } from './components/move-list/move-list.component';
 import { PageNotFoundComponent } from './shared/page-not-found/page-not-found.component';
 import { MoveDetailComponent } from './components/move-detail/move-detail.component';
 import { PokemonDetailComponent } from './components/pokemon-detail/pokemon-detail.component';
+import { PokeballListComponent } from './components/pokeball-list/pokeball-list.component';
+import { PokeballDetailComponent } from './components/pokeball-detail/pokeball-detail.component';
 
 const routes: Routes = [
 
@@ -12,6 +14,8 @@ const routes: Routes = [
   {path: 'move', component: MoveListComponent},
   {path:'move-detail/:id', component: MoveDetailComponent},
   {path: 'pokemon-detail/:id', component: PokemonDetailComponent},
+  {path: 'pokeballs', component: PokeballListComponent},
+  {path: 'pokeballs-detail/:id', component: PokeballDetailComponent},
   {path: '', redirectTo: 'pokemon', pathMatch: 'full'},
   {path:'**',component: PageNotFoundComponent},
 ];
