@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
+h4{
+  font-family: 'Press Start 2P', cursive; /* Fuente que imita el estilo Pokémon */
+}
+
 .card {
     font-family: 'Press Start 2P', cursive; /* Fuente que imita el estilo Pokémon */
     border-radius: 15px;
