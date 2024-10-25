@@ -1,0 +1,12 @@
+<div class="card" style="width: 13rem">
+  
+    <div class="card-body">
+        <h5 class="card-title" >{{ pokemon!.name }}</h5>
+        <p class="card-text" >{{ pokemon!.abilities }}</p>
+        <p class="card-text" >{{ pokemon!.height }}</p>
+        <p class="card-text" >{{ pokemon!.weight }}</p>
+
+      <a [routerLink]="['/pokemon-detail', pokemon?.id]">Detalles</a>
+
+    </div>
+  </div>

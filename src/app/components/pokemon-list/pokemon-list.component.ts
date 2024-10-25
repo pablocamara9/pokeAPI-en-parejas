@@ -14,11 +14,14 @@ export class PokemonListComponent implements OnInit {
   constructor(private pokenmonSvc: PokemonServicesService) { }
 
 ngOnInit(): void {
-  this.pokenmonSvc.getPokemon().subscribe(respuesta => {
+  this.pokenmonSvc.getPokemonList(1025).subscribe(respuesta => {
     this.listOfPokemon = respuesta.results;
   });
 }
 
+getPokemonId(url: string): number  {
+  return parseInt(url.split('/')[6]);
+}
 
 
 

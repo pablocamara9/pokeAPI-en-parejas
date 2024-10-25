@@ -17,23 +17,9 @@ export class MoveDetailComponent {
     private moveSvc: MoveServicesService)  {}
   ngOnInit(): void {
     this.moveId = Number(this.route.snapshot.paramMap.get('id'));
-
-
     this.moveSvc.getOneMove(this.moveId!).subscribe((response) => {
       this.move = response;
     });
 }
-/*
-  
 
-  getPeopleUrlImage(url: string) {
-    let id = url.split('/')[5];
-    return `https://starwars-visualguide.com/assets/img/characters/${id}.jpg`;
-  }
-
-  getPersonId(url: string): number {
-    return parseInt(url.split('/')[5]);
-  }
-}
-*/ 
 }

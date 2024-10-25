@@ -28,5 +28,5 @@ export interface Ability {
   export interface PokemonResponse {
     count: number;
     results: Pokemon[];
-    sprites: string;
+    
   }
